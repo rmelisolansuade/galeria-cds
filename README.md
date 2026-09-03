@@ -18,6 +18,6 @@ La futura galería incluirá:
 * Una navegación sencilla organizada por categorías o estilos musicales.
 
 ## Decisiones de diseño (CSS)
-* **Colores:** Se eligió una paleta neutra en tonos oscuros (#222222) para el encabezado y pie de página, con fondos claros (#f4f4f4) para el contenido. Esto permite que resalten las portadas de los CDs sin distracciones visuales.
-* **Tipografía:** Se utilizó `Arial, sans-serif`, una tipografía limpia y de fácil lectura que le da un aspecto moderno a la galería.
-* **Relación con el tema:** La sobriedad del diseño busca imitar un catálogo o exhibidor de música, donde el centro de atención es el arte visual de cada álbum.
+* **Colores:** Se seleccionó una paleta oscura basada en tonos negro carbón (#121212 y #1e1e1e) para el fondo y las tarjetas. Este contraste resalta el color y arte visual de las tapas de los CDs, logrando una estética estilo "galería o catálogo de rock/pop".
+* **Tipografía:** Se utilizó `Arial, sans-serif`, priorizando una lectura clara y limpia de la información de los álbumes.
+* **Relación con el tema:** El tono oscuro remite a la estética de los reproductores, estudios de grabación y portadas clásicas de discos, dándole protagonismo absoluto a la colección visual.
