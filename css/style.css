@@ -99,7 +99,7 @@ main > h2 {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start; /* Alinea todas las tarjetas a la izquierda */
     align-items: stretch;
     width: 100%;
 }
