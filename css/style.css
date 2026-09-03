@@ -12,14 +12,14 @@ header {
     background-color: #111111;
     color: #ffffff;
     text-align: center;
-    padding: 30px 20px;
+    padding: 25px 20px;
     border-bottom: 4px solid #e6121b;
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
 header h1 {
     margin: 0 0 8px 0;
-    font-size: 2.2rem;
+    font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -27,7 +27,7 @@ header h1 {
 header p {
     margin: 0;
     color: #cccccc;
-    font-size: 1rem;
+    font-size: 0.95rem;
 }
 
 /* Pie de página */
@@ -35,25 +35,20 @@ footer {
     background-color: #111111;
     color: #ffffff;
     text-align: center;
-    padding: 25px;
-    margin-top: 60px;
-    font-size: 0.9rem;
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 0.85rem;
     border-top: 4px solid #e6121b;
 }
 
-/* Enlaces generales */
-a {
-    color: #e6121b;
-    text-decoration: none;
-}
-
-/* Contenedor principal sin límites angostos (ocupa casi toda la pantalla) */
+/* Contenedor principal */
 main {
     width: 92%;
-    max-width: 1400px;
+    max-width: 1300px;
     margin: 30px auto;
 }
 
+/* Presentación en 2 columnas */
 .presentacion {
     background-color: #ffffff;
     padding: 30px;
@@ -61,16 +56,40 @@ main {
     border-radius: 10px;
     border-left: 5px solid #e6121b;
     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.presentacion h2 {
+.presentacion-texto {
+    flex: 1 1 400px;
+}
+
+.presentacion-texto h2 {
     margin-top: 0;
     color: #111111;
     font-size: 1.5rem;
 }
 
+.presentacion-texto p {
+    line-height: 1.6;
+    color: #444444;
+}
+
+/* Foto panorámica adaptada */
+.foto-banner {
+    flex: 1 1 350px;
+    max-width: 100%;
+    height: auto;
+    max-height: 280px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
 main > h2 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     text-transform: uppercase;
     letter-spacing: 1px;
     border-bottom: 2px solid #e6121b;
@@ -79,52 +98,49 @@ main > h2 {
     margin-bottom: 25px;
 }
 
-/* Grilla de productos */
+/* Grilla de tarjetas unificadas */
 .galeria {
     display: flex;
-    gap: 25px;
+    gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: stretch; /* Fuerza a que todas las tarjetas tengan exactamente la misma altura */
+    align-items: stretch;
 }
 
-/* Tarjeta unificada */
 .tarjeta {
     background-color: #ffffff;
     border: 1px solid #e2e8f0;
     border-radius: 10px;
-    padding: 20px;
-    flex: 1 1 240px; /* Se adaptan en ancho equitativamente */
-    max-width: 300px;
+    padding: 15px;
+    flex: 1 1 220px;
+    max-width: 260px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Empuja el botón siempre abajo de todo */
+    justify-content: space-between;
     text-align: center;
     transition: all 0.3s ease;
     box-shadow: 0 4px 10px rgba(0,0,0,0.04);
 }
 
-/* Efecto hover al pasar el mouse por la tarjeta */
 .tarjeta:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 20px rgba(230, 18, 27, 0.15);
+    transform: translateY(-6px);
+    box-shadow: 0 10px 18px rgba(230, 18, 27, 0.15);
     border-color: #e6121b;
 }
 
-/* Imagen fija igual para todos los CDs */
 .tarjeta img {
     width: 100%;
-    height: 220px;
+    height: 210px;
     object-fit: cover;
     border-radius: 6px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
 
 .tarjeta h3 {
-    font-size: 1.05rem;
-    margin: 15px 0 5px 0;
+    font-size: 1rem;
+    margin: 12px 0 4px 0;
     color: #111111;
-    min-height: 2.6em; /* Mantiene la misma altura independientemente de las líneas de texto */
+    min-height: 2.4em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -132,21 +148,19 @@ main > h2 {
 
 .tarjeta p {
     color: #666666;
-    font-size: 0.9rem;
-    margin: 0 0 15px 0;
+    font-size: 0.85rem;
+    margin: 0 0 12px 0;
 }
 
-/* Botón estilo tienda */
 .tarjeta a {
     display: block;
     background-color: #e6121b;
     color: #ffffff;
-    padding: 10px 0;
+    padding: 9px 0;
     border-radius: 6px;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
     transition: background-color 0.2s ease;
 }
 
@@ -155,36 +169,36 @@ main > h2 {
     text-decoration: none;
 }
 
-/* Página de detalle del CD */
+/* Página de detalle */
 .detalle-cd {
     background-color: #ffffff;
-    padding: 40px;
+    padding: 35px;
     border-radius: 10px;
     border-top: 5px solid #e6121b;
     box-shadow: 0 4px 15px rgba(0,0,0,0.06);
     text-align: center;
-    max-width: 700px;
+    max-width: 650px;
     margin: 0 auto;
 }
 
 .detalle-cd img {
-    max-width: 380px;
+    max-width: 350px;
     width: 100%;
-    height: 380px;
+    height: 350px;
     object-fit: cover;
     border-radius: 8px;
-    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
-    margin: 20px 0;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+    margin: 15px 0;
 }
 
 .boton-volver {
     display: inline-block;
-    margin-top: 25px;
-    padding: 12px 25px;
+    margin-top: 20px;
+    padding: 10px 22px;
     background-color: #111111;
     color: #ffffff !important;
     border-radius: 6px;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     font-weight: bold;
     text-transform: uppercase;
 }
