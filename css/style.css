@@ -1,0 +1,103 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado y Pie de página */
+header, footer {
+    background-color: #222222;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer {
+    margin-top: 40px;
+}
+
+/* Enlaces */
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Contenido principal */
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.presentacion {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+.foto-banner {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Galería de tarjetas (Grid simple) */
+.galeria {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tarjeta {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    padding: 15px;
+    width: 260px;
+    text-align: center;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Página de detalle del CD */
+.detalle-cd {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.detalle-cd img {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.boton-volver {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #222222;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.boton-volver:hover {
+    background-color: #444444;
+    color: #ffffff;
+    text-decoration: none;
+}
