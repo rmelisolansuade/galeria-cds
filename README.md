@@ -18,6 +18,6 @@ La futura galería incluirá:
 * Una navegación sencilla organizada por categorías o estilos musicales.
 
 ## Decisiones de diseño (CSS)
-* **Colores:** Se seleccionó una paleta oscura basada en tonos negro carbón (#121212 y #1e1e1e) para el fondo y las tarjetas. Este contraste resalta el color y arte visual de las tapas de los CDs, logrando una estética estilo "galería o catálogo de rock/pop".
-* **Tipografía:** Se utilizó `Arial, sans-serif`, priorizando una lectura clara y limpia de la información de los álbumes.
-* **Relación con el tema:** El tono oscuro remite a la estética de los reproductores, estudios de grabación y portadas clásicas de discos, dándole protagonismo absoluto a la colección visual.
+* **Colores:** Se implementó una paleta inspirada en tiendas de música profesionales (como LEF Casa de Música), utilizando fondos muy claros (#f8f9fa / #ffffff) y un color acento rojo (#e6121b) para los botones. Esto simula un catálogo o e-commerce real.
+* **Tipografía:** Se seleccionó `Segoe UI / sans-serif` para lograr un aspecto limpio, moderno y legible en fichas de producto.
+* **Relación con el tema:** La estructura tipo vitrina con sombras sutiles e iteraciones visuales al pasar el cursor le da el protagonismo absoluto a las portadas físicas de los discos.
